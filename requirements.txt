@@ -1,0 +1,7 @@
+argparse
+tqdm
+numpy
+matplotlib
+opencv-python
+ftfy
+regex
