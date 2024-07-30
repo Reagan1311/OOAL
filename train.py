@@ -63,7 +63,7 @@ logger.addHandler(logging.StreamHandler(sys.stdout))
 logger.info(str_1)
 
 if __name__ == '__main__':
-    set_seed(seed=0)
+    set_seed(seed=321)
 
     from data.agd20k_ego import TrainData, TestData, SEEN_AFF, UNSEEN_AFF
 

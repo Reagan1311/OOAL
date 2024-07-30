@@ -13,7 +13,7 @@ from utils.evaluation import cal_kl, cal_sim, cal_nss
 
 parser = argparse.ArgumentParser()
 ##  path
-parser.add_argument('--data_root', type=str, default='./dataset/agd20k')
+parser.add_argument('--data_root', type=str, default='./dataset/')
 parser.add_argument('--model_file', type=str, default=None)
 parser.add_argument('--save_path', type=str, default='./save_preds')
 ##  image
@@ -34,7 +34,7 @@ if args.viz:
         os.makedirs(args.save_path, exist_ok=True)
 
 if __name__ == '__main__':
-    set_seed(seed=0)
+    set_seed(seed=321)
 
     from data.agd20k_ego import TestData, SEEN_AFF, UNSEEN_AFF
 
